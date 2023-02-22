@@ -1,0 +1,140 @@
+:root {
+  /* Primary */
+  --Softblue: hsl(215, 51%, 70%);
+  --Cyan: hsla(178, 100%, 50%, 0.61);
+  --cyan-active: #28d9dd;
+  /* Neutral */
+  --Verydarkblue-main-BG: hsl(217, 54%, 11%);
+  --Verydarkblue-card-BG: hsl(216, 50%, 16%);
+  --Verydarkblue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--Verydarkblue-main-BG);
+}
+
+.main-container {
+  width: 315px;
+  margin-top: 1.5em;
+  background-color: var(--Verydarkblue-card-BG);
+  border-radius: 0.6em;
+  padding: 1.1em;
+}
+
+.img-container {
+  background-image: url(./images/image-equilibrium.jpg);
+  background-size: cover;
+  width: 275px;
+  height: 267px;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+.eye-img {
+  opacity: 0;
+  background-color: var(--Cyan);
+  background-image: url(./images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.eye-img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.title {
+  color: var(--White);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.title:hover {
+  color: var(--cyan-active);
+  cursor: pointer;
+}
+.description {
+  color: var(--Softblue);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.65rem;
+  margin-bottom: 1.3rem;
+}
+.container-value-days {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.9rem;
+}
+
+.value-icon{
+  color: var(--cyan-active);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.icon-ethereum{
+  height: 1em;
+  padding-right: 0.3em;
+}
+
+.days-icon{
+  color: var(--Softblue);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.days-icon{
+  height: 1em;
+  padding-right: 0.3em;
+}
+.line {
+  border-top: 1px solid var(--Verydarkblue-line);
+  margin-bottom: 1em;
+}
+.creator {
+  display: flex;
+  align-items: center;
+}
+
+.image-creator {
+  width: 33px;
+  height: 33px;
+  border: 1px solid var(--White);
+  border-radius: 50%;
+}
+
+.creator-ether {
+  color: var(--Softblue);
+  font-size: 0.9rem;
+  margin-left: 1.2em;
+  font-weight: 400;
+}
+
+.creator-ether span {
+  color: var(--White);
+  font-weight: 400;
+}
+.creator-ether span:hover {
+  color: var(--cyan-active);
+  cursor: pointer;
+  font-weight: 400;
+}
+.attribution {
+  margin-top: 3em;
+  font-size: 0.9rem;
+  color: var(--Verydarkblue-line);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
